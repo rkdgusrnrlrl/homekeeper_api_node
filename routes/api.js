@@ -5,6 +5,10 @@
 var express = require('express')
 var router = express.Router()
 
+//root 하는 부분
+router.get('/', function (req, res)  {
+    res.send("hello")
+})
 
 //select 하는 부분
 router.get('/api/homekeepers', function (req, res)  {
